@@ -7,12 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import static Utility.DriverFactory.wait;
 
 public class WaitsPage{
-    WebDriver driver;
-    public WaitsPage(WebDriver driver){
-        this.driver = driver;
-    }
-
-    public String waitForAlert(){
+    public static String waitForAlert(WebDriver driver){
         wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = driver.switchTo().alert();
         //Obtengo el mensaje del alert

@@ -9,13 +9,10 @@ public class MenuPage {
     @FindBy(id = "cartur")
     WebElement getCart;
     WebDriver driver;
-
-
     public MenuPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-
     public void clickCart(){
         getCart.click();
     }

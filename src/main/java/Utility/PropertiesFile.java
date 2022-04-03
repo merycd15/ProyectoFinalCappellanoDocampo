@@ -6,7 +6,6 @@ import java.util.Properties;
 
 public class PropertiesFile {
     static Properties properties = new Properties();
-
     public static String getProperty (String data){
         try{
             InputStream input = new FileInputStream("src/main/resources/data.properties");
